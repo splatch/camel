@@ -57,7 +57,6 @@ public abstract class CamelCdiTestContainer extends CamelTestSupport {
     @After
     public void tearDown() throws Exception {
         super.tearDown();
-        context.stop();
         cdiContainer.shutdown();
     }
 
